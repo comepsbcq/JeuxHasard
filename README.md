@@ -6,5 +6,9 @@ Cet accessoire, développé en utilisant Python, avait pour but de m'entraîner 
 - [X] Pile ou face
 - [X] Lancer de dé
 - [X] Black Jack
-- [] Poker
-- [] A définir
+- [ ] Poker
+- [ ] A définir
+
+Ce fichier a été développé en Python, et sera adapté en C#.
+La version proposée pour le moment est **UNIQUEMENT** en français. Une version en anglais sera potentiellement disponible.
+Vous pouvez télécharger le fichier .exe [ici](https://drive.google.com/file/d/1PgkPief8oxC6lfY6NbsNfrFuN-WHwBfj/view?usp=drive_link)
