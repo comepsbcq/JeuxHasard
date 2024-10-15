@@ -6,6 +6,7 @@ Cet accessoire, développé en utilisant Python, avait pour but de m'entraîner 
 - [X] Pile ou face
 - [X] Lancer de dé
 - [X] Black Jack
+- [ ] MasterMind
 - [ ] Poker
 - [ ] A définir
 
