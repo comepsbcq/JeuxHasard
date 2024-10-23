@@ -31,6 +31,16 @@ def rejouerPF():
     else :
         print("Synthax error: please type only the selected option.")
         rejouerPF()
+
+def rejouerMM():
+    rejouer = input("Souhaitez-vous rejouer ou retourner au menu ? (Rejouer/menu) : ").lower()
+    if rejouer == "rejouer":
+        mastermind()
+    elif rejouer == "menu":
+        start()
+    else :
+        print("Synthax error: please type only the selected option.")
+        rejouerMM()
     
 # Système de lancer de dé basé sur le mode random (randint) proposé par python.
 def des():
@@ -47,7 +57,47 @@ def des():
             loop = False
     rejouerDES()
 
-
+# Mode de jeu Mastermind, tiré du jeu de société.
+def mastermind():
+    os.system('cls')
+    print(f"{VERT}Bienvenue dans le {ROUGE}{GRAS}Master{RESET}{GRAS}Mind !\n{RESET}{VERT}Le principe du jeu est simple : quatre couleurs vont être choisies par l'ordinateur. Vous devrez les deviner.")
+    USER_CHOICE = input("Avez-vous comprit ? (Oui/non) ").lower()
+    if USER_CHOICE == "oui":
+        loopMM = True
+        os.system('cls')
+        couleurs = ['rouge', 'vert', 'bleu', 'jaune', 'blanc', 'noir']
+        couleur1 = choice(couleurs)
+        couleur2 = choice(couleurs)
+        couleur3 = choice(couleurs)
+        couleur4 = choice(couleurs)
+        print("Vous allez désormais être demandé sur les quatre couleurs (une à une)")
+        print("Les couleurs disponibles sont rouge, vert, bleu, jaune, blanc et noir.")
+        while loopMM == True:
+            bonnereponse = 0
+            couleur1avis = input("Quelle couleur pensez-vous être en première position ? ").lower()
+            couleur2avis = input("Quelle couleur pensez-vous être en deuxième position ? ").lower()
+            couleur3avis = input("Quelle couleur pensez-vous être en troisième position ? ").lower()
+            couleur4avis = input("Quelle couleur pensez-vous être en quatrième position ? ").lower()
+            if couleur1avis == couleur1:
+                bonnereponse = bonnereponse +1
+            if couleur2avis == couleur2:
+                bonnereponse = bonnereponse +1
+            if couleur3avis == couleur3:
+                bonnereponse = bonnereponse +1
+            if couleur4avis == couleur4:
+                bonnereponse = bonnereponse +1
+            if bonnereponse == 4:
+                print("Félicitation! Vous avez trouver les quatre couleurs !")
+                loopMM = False
+            if 4 > bonnereponse >= 0:
+                print("Vous avez trouvé", bonnereponse, "couleur(s). Réessayez !")
+        os.system('pause')
+        rejouerMM()
+    elif USER_CHOICE == "non":
+        mastermind()
+    else :
+        print("Synthax error : please type the selected option.")
+        mastermind()
 
 # Système de pile ou face basé sur un nombre aléatoire en 0 et 1000 
 def pf():
