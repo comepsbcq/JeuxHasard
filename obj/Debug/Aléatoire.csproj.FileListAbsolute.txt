@@ -1,0 +1,7 @@
+C:\Users\comep\source\repos\Aléatoire\Aléatoire\bin\Debug\Aléatoire.exe.config
+C:\Users\comep\source\repos\Aléatoire\Aléatoire\bin\Debug\Aléatoire.exe
+C:\Users\comep\source\repos\Aléatoire\Aléatoire\bin\Debug\Aléatoire.pdb
+C:\Users\comep\source\repos\Aléatoire\Aléatoire\obj\Debug\Aléatoire.csproj.AssemblyReference.cache
+C:\Users\comep\source\repos\Aléatoire\Aléatoire\obj\Debug\Aléatoire.csproj.CoreCompileInputs.cache
+C:\Users\comep\source\repos\Aléatoire\Aléatoire\obj\Debug\Aléatoire.exe
+C:\Users\comep\source\repos\Aléatoire\Aléatoire\obj\Debug\Aléatoire.pdb
